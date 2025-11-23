@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - E-Commerce Website</title>
+  
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+} 
+
+/* Header */
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.cart-btn {
+    background: #ff9800;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+ .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url("https://images.unsplash.com/photo-1523275335684-37898b6baf30") no-repeat center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.shop-btn {
+    padding: 10px 20px;
+    background: #ff9800;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+/* Products */
+ .products-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card button {
+    padding: 8px 15px;
+    background: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}  
+    </style>
+</head>
+<body> 
+
+    <!-- Header -->
+     <header>
+        <div class="logo">ShopEase</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</div>
+    </header> 
+
+    <!-- Hero Section -->
+     <section class="hero">
+        <h1>Quality Products at Best Prices</h1>
+        <p>Shop latest trends & enjoy fast delivery.</p>
+        <button class="shop-btn">Shop Now</button>
+    </section> 
+
+    <!-- Products Section -->
+     <section class="products-section">
+        <h2>Featured Products</h2>
+        <div class="product-container"> 
+
+            <!-- Product 1 -->
+             <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop" />
+                <h3>Smart Laptop</h3>
+                <p>$820</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div> 
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1595923533867-ff8a01335ff9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdyaXN0d2F0Y2h8ZW58MHx8MHx8fDA%3D" alt="Watch" />
+                <h3>Digital Smart Watch</h3>
+                <p>$120</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div> 
+
+            <!-- Product 3 -->
+             <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Camera" />
+                <h3>Professional Camera</h3>
+                <p>$540</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div> 
+
+            <!-- Product 4 -->
+             <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="Headphones" />
+                <h3>Wireless Headphones</h3>
+                <p>$70</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html> 
+
+
